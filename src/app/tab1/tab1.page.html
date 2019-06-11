@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">
+    <h2> Lista de Inmuebles</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card"  *ngFor="let item of parques">
+
+      <ion-card-header>
+          <ion-card-title>El PRIMERO</ion-card-title>
+        <ion-card-subtitle>El más ponderado</ion-card-subtitle>
+      </ion-card-header>
+
+
+          <ion-item>
+            <ion-thumbnail slot="start">
+            <ion-img src="../assets/{{item.foto}}"></ion-img>
+            </ion-thumbnail>
+            <ion-label>
+              <h2>{{item.Name }}</h2>
+              {{ item.Description}}
+            </ion-label>
+            <label slot="end"><h1>Casa # 3 Barrio la Primavera</h1></label>
+            </ion-item>
+
+
+
+     <ion-card-content >
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4">
+            <p>Descripcion</p>
+          </ion-col>
+          <ion-col size="8">
+            <p>Descripcion</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+        </ion-card-content>
+
+    </ion-card>
+
+
+    <ion-card class="welcome-card">
+        <ion-thumbnail slot="start">
+      <ion-img src="/assets/casa890.PNG"></ion-img>
+        </ion-thumbnail>
+
+
+      <ion-card-header>
+
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>PELICULA</ion-card-title>
+      </ion-card-header>
+      <ion-card-content >
+        <p class="parrafo">Una película es una serie de imágenes fijas que, cuando se proyectan en una pantalla de forma consecutiva en rápida sucesión, crean la ilusión óptica de imágenes en movimiento.
+          El término normalmente se usa como sinónimo de obra cinematográfica, es decir, una historia (ficticia o documental), registrada en un soporte (película flexible o contenedor digital) que se graba y lee mediante un mecanismo continuo o intermitente de sucesión de imágenes.
+          Estas películas cinematográficas también reciben el nombre de film​ o filme.</p>
+      </ion-card-content>
+    </ion-card>
+<ion-button href="/localiza">Va a Localiza</ion-button>
+
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="https://ionicframework.com/docs/">
+        <ion-icon slot="start" name="cog"></ion-icon>
+        <ion-label>Ionic Documentation</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+        <ion-icon slot="start" name="battery-dead"></ion-icon>
+        <ion-label>Scaffold Out Your App</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/layout/structure">
+        <ion-icon slot="start" color="medium" name="sync"></ion-icon>
+        <ion-label>Change Your App Layout</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/theming/basics">
+        <ion-icon slot="start" color="medium" name="warning"></ion-icon>
+        <ion-label>Theme Your App</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
